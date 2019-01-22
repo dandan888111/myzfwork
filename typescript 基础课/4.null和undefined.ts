@@ -5,5 +5,5 @@ x = undefined;
 x = null;
 
 
-let y:number;
-console.log(y);
+// let y:number;
+// console.log(y);

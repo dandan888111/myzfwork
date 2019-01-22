@@ -1,0 +1,14 @@
+"use strict";
+// 接口！！！！
+// 接口是一种规范的定义，定义了行为和动作的规范
+// 接口定义了某些类必须遵守的规范
+// 接口不关心类的内部状态数据，也不关心细节
+// 类似与抽象类，还增加了属性、函数等类型
+function getUserInfo(user) {
+    console.log(user.name + " " + user.age + " " + user.home);
+}
+function getVipInfo(user) {
+    console.log(user.name + " " + user.age);
+}
+getUserInfo({ name: 'wudandan', age: 30, home: 'shaoyang' });
+getVipInfo({ name: 'wudandan', age: 30, home: 'shaoyang' });
