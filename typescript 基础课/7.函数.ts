@@ -34,12 +34,12 @@ ajax2('/user');
 
 
 // 剩余参数
-function sum(...numbers:number[]) {
+function sum2(...numbers:number[]) {
     return numbers.reduce( (val, item)=> {
         return val + item
     })
 }
-let sum1 = sum(1,2,3,4,5);
+let sum1 = sum2(1,2,3,4,5);
 console.log(sum1);
 
 

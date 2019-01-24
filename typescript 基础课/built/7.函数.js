@@ -24,7 +24,7 @@ function ajax2(url, method) {
 }
 ajax2('/user');
 // 剩余参数
-function sum() {
+function sum2() {
     var numbers = [];
     for (var _i = 0; _i < arguments.length; _i++) {
         numbers[_i] = arguments[_i];
@@ -33,5 +33,5 @@ function sum() {
         return val + item;
     });
 }
-var sum1 = sum(1, 2, 3, 4, 5);
+var sum1 = sum2(1, 2, 3, 4, 5);
 console.log(sum1);
