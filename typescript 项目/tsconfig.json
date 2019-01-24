@@ -1,0 +1,13 @@
+{
+    "compilerOptions": {
+      "outDir": "./dist",
+      "sourceMap": true,
+      "noImplicitAny": true,// 不能隐示的使用any，必须制定类型
+      "module": "commonjs",
+      "target": "es5",
+      "jsx": "react"
+    },
+    "include": [
+      "./src/**/*"  // 只编译src目录下的文件
+    ]
+}
