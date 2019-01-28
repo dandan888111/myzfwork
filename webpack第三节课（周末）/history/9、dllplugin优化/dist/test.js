@@ -1,3 +1,4 @@
+this["a"] =
 /******/ (function(modules) { // webpackBootstrap
 /******/ 	// The module cache
 /******/ 	var installedModules = {};
@@ -81,19 +82,19 @@
 /******/
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = "./src/index.js");
+/******/ 	return __webpack_require__(__webpack_require__.s = "./src/test.js");
 /******/ })
 /************************************************************************/
 /******/ ({
 
-/***/ "./src/index.js":
-/*!**********************!*\
-  !*** ./src/index.js ***!
-  \**********************/
+/***/ "./src/test.js":
+/*!*********************!*\
+  !*** ./src/test.js ***!
+  \*********************/
 /*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
+/***/ (function(module, exports) {
 
-eval("var xhr = new XMLHttpRequest(); // 不写 http://***,请求的是8080端口\n// ajax 先访问8080端口  之后把代理转发到 3000端口上\n\nvar url; // 环境变量 development\n\nconsole.log(\"development\");\nconsole.log(\"hello\");\nconsole.log(1+3);\nconsole.log(true);\n\nif (true) {\n  url = '/api/user';\n} else {}\n\nxhr.open('get', url, true);\n\nxhr.onload = function () {\n  window.root.innerHTML = xhr.responseText;\n};\n\nxhr.send();\n\n//# sourceURL=webpack:///./src/index.js?");
+eval("\n\n\nmodule.exports = 'wudandan';\n\n//# sourceURL=webpack://a/./src/test.js?");
 
 /***/ })
 

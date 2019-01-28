@@ -1,3 +1,4 @@
+this["a"] =
 /******/ (function(modules) { // webpackBootstrap
 /******/ 	// The module cache
 /******/ 	var installedModules = {};
@@ -93,7 +94,7 @@
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-eval("\r\n\r\n\r\nmodule.exports = 'wudandan';\n\n//# sourceURL=webpack:///./src/test.js?");
+eval("\n\n\nmodule.exports = 'wudandan';\n\n//# sourceURL=webpack://a/./src/test.js?");
 
 /***/ })
 
