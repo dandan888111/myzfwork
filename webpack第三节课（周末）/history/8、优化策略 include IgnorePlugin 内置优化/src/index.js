@@ -13,3 +13,5 @@ let b = 2;
 let c = 3;
 let d = a + b + c;
 console.log(d);
+
+console.log(6);

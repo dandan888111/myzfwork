@@ -1,15 +1,16 @@
 
 
-// 用es6导出的模块，会把结果放到module.exports.default属性
-// let calc = require('./calc');
-// 用上面这行代码，会把不要的属性也打包进去
 
-import calc from './calc';
-console.log(calc.sum('a','b'));
+import React from 'react';
+import ReactDOM from 'react-dom';
+
+// 每次打包时，都需要重新打包react和react-dom
+// 1）先把react和react-dm打包好，先存起来
+// 2）引用打包好的文件
+
+// html + js 的混合写法
+
+let ele = <h1>jsx111 语法</h1>
+ReactDOM.render(ele,window.root);
 
 
-let a = 1;
-let b = 2;
-let c = 3;
-let d = a + b + c;
-console.log(d);

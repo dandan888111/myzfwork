@@ -25,6 +25,8 @@
     "webpack-merge": "^4.2.1"
   },
   "dependencies": {
-    "clean-webpack-plugin": "^1.0.1"
+    "clean-webpack-plugin": "^1.0.1",
+    "react": "^16.7.0",
+    "react-dom": "^16.7.0"
   }
 }

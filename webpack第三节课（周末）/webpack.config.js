@@ -24,7 +24,8 @@ module.exports = {
           loader:'babel-loader',
           options:{
             presets:[ // @babel/preset-stage-0
-              '@babel/preset-env' // 把高级语法转化成低级语法
+              '@babel/preset-env', // 把高级语法转化成低级语法
+              '@babel/preset-react'
             ]
           }
         } 
