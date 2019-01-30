@@ -28,9 +28,8 @@ module.exports = {
   },
   mode: 'development',
   entry: {
-    // home: './src/Home.js',
-    // login: './src/Login.js',
-    main: './src/index.js'
+    home: './src/Home.js',
+    login: './src/Login.js',
   },
   output: {
     filename: '[name].js',
@@ -49,10 +48,6 @@ module.exports = {
             presets:[ // @babel/preset-stage-0
               '@babel/preset-env', // 把高级语法转化成低级语法
               '@babel/preset-react'
-            ],
-            plugins: [
-              // 支持动态载入
-              '@babel/plugin-syntax-dynamic-import'
             ]
           }
         } 
