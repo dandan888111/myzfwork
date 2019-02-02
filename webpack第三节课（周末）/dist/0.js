@@ -7,7 +7,7 @@
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-eval("module.exports = 'wdd use'\n\n//# sourceURL=webpack:///./src/use.js?");
+eval("module.exports = 'wdd use';\n\n//# sourceURL=webpack:///./src/use.js?");
 
 /***/ })
 

@@ -205,7 +205,7 @@
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-eval("\r\n\r\nlet btn = document.createElement('button');\r\nbtn.innerHTML = '点我';\r\n\r\ndocument.body.appendChild(btn);\r\n\r\nbtn.addEventListener('click', function() {\r\n    // webpack提供的语法，动态引入\r\n    __webpack_require__.e(/*! import() */ 0).then(__webpack_require__.t.bind(null, /*! ./use.js */ \"./src/use.js\", 7)).then(data =>{\r\n        console.log(data.default);\r\n    });\r\n})\r\n\n\n//# sourceURL=webpack:///./src/index.js?");
+eval("var btn = document.createElement('button');\nbtn.innerHTML = '点我';\ndocument.body.appendChild(btn);\nbtn.addEventListener('click', function () {\n  // webpack提供的语法，动态引入\n  __webpack_require__.e(/*! import() */ 0).then(__webpack_require__.t.bind(null, /*! ./use.js */ \"./src/use.js\", 7)).then(function (data) {\n    console.log(data.default);\n  });\n});\n\n//# sourceURL=webpack:///./src/index.js?");
 
 /***/ })
 

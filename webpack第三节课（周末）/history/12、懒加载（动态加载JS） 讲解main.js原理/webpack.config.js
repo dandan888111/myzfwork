@@ -34,7 +34,7 @@ module.exports = {
   },
   output: {
     filename: '[name].js',
-    path: resolve(__dirname, 'dist')
+    path: resolve(__dirname, 'lazy')
   },
   module: {
     noParse: /jquery | lodash/,  // jquery 有require 不解析当前模块中的依赖关系
