@@ -1,28 +1,28 @@
 wifi: zhufengpeixun 
       12345678
 
-## ÉÏ¿ÎÊ±¼ä
-- ÖÜÄÚ ÖÜÒ»ÖÜÈıÍíÉÏ8-10 
-- ÖÜÄ© ÖÜÈÕÈ«Ìì 9.30 - 1:00  3:00 - 6:00
+## ä¸Šè¯¾æ—¶é—´
+- å‘¨å†… å‘¨ä¸€å‘¨ä¸‰æ™šä¸Š8-10 
+- å‘¨æœ« å‘¨æ—¥å…¨å¤© 9.30 - 1:00  3:00 - 6:00
 
-## ¿ÎÇ°×¼±¸ 
-- ÏÂÔØvscode  https://code.visualstudio.com/  
-- ÏÂÔØgit     https://git-scm.com/downloads
-- ÏÂÔØnode    https://nodejs.org/en/
+## è¯¾å‰å‡†å¤‡ 
+- ä¸‹è½½vscode  https://code.visualstudio.com/  
+- ä¸‹è½½git     https://git-scm.com/downloads
+- ä¸‹è½½node    https://nodejs.org/en/
 
-# ½ñÈÕ½²¿Î´ó¸Ù  »Øµ÷ ¡ª> promise -> generator -> async+await
-## 1.¸ß½×º¯Êı
-## 2.aop  Aspect Oriented Programming  ×°ÊÎÆ÷@
-## 3.lodash afterº¯Êı
-## 4.·¢²¼¶©ÔÄ
-## 5.¹Û²ìÕßÄ£Ê½
-## 6.promiseÓ¦ÓÃ
-## 7.ÊÖĞ´promise a£« ¹æ·¶
+# ä»Šæ—¥è®²è¯¾å¤§çº²  å›è°ƒ â€”> promise -> generator -> async+await
+## 1.é«˜é˜¶å‡½æ•°
+## 2.aop  Aspect Oriented Programming  è£…é¥°å™¨@
+## 3.lodash afterå‡½æ•°
+## 4.å‘å¸ƒè®¢é˜…
+## 5.è§‚å¯Ÿè€…æ¨¡å¼
+## 6.promiseåº”ç”¨
+## 7.æ‰‹å†™promise aï¼‹ è§„èŒƒ
 	- p.catch
 	- p.finally
 	- Promise.resolve,Promise.reject
 	- Promise.deferred
 	- Promise.all,Promise.race
 ## 8.generator + co
-## 9.async £« await 
-## 10.×îÖÕ°¸Àı
+## 9.async ï¼‹ await 
+## 10.æœ€ç»ˆæ¡ˆä¾‹
