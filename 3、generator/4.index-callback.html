@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+    .ball{
+        width:100px; height: 100px; background: red; border-radius: 50%;;
+    }
+    .ball1{ position: absolute; top:0;}
+    .ball2{ position: absolute; top:120px;}
+    .ball3{ position: absolute; top:240px;}
+    </style>
+</head>
+<body>
+    <div class="ball ball1"></div>
+    <div class="ball ball2"></div>
+    <div class="ball ball3"></div>
+</body>
+<script>
+    
+    let move = function (ele, pos, callback) {
+        let start = 0;
+        let timer = setInterval( () => {
+            start += 5;
+            if(start >= pos){
+                ele.style.left = pos + 'px';
+                clearInterval(timer);
+                callback();
+            }
+            ele.style.left = start + 'px';
+        },13)
+    }
+
+    let $ = document.querySelector.bind(document);
+    move($('.ball1'), 300, function(){
+        move($('.ball2'), 300, function(){
+            move($('.ball3'), 300, function(){
+            })
+        })
+    });
+</script>
+</html>

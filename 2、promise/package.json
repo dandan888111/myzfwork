@@ -1,0 +1,8 @@
+{
+  "devDependencies": {
+    "bluebird": "^3.5.3"
+  },
+  "dependencies": {
+    "mz": "^2.7.0"
+  }
+}
