@@ -15,18 +15,28 @@ function Promise(executor) {
     that.status = 'pending';
     that.value = undefined;
     that.reason = undefined;
+    // 依赖的是发布订阅模式 将成功的和失败依次存放到数组中
+    // 等待用户改变状态 依次调用绑定的事件
+    that.onResolvedCallbacks = [];  // 专门用来存放成功的状态！
+    that.onRejectedCallbacks = [];  // 专门存放失败的回调
     function resolve(value) {
         //  调用了resolve，当前状态就变成了成功态
         if(that.status === 'pending'){
             that.status = 'fulfilled';
             that.value = value;
+            that.onResolvedCallbacks.forEach(function(fn){
+                fn();   // 让匿名函数执行
+            });
         }
     }
     function reject(reason) {
         //  调用了reject，就变成了失败态！
         if(that.status === 'pending'){
             that.status = 'rejected';
-            that.reason = reason;
+            that.reason = reason;       
+            that.onRejectedCallbacks.forEach(function(fn){
+                fn();   // 让匿名函数执行
+            });
         }
     }
     executor(resolve, reject);
@@ -34,28 +44,20 @@ function Promise(executor) {
 
 Promise.prototype.then = function(onFulfiled, onRejected) {
     let that = this;
-    if(that.status === 'fulfilled'){
+    if(that.status === 'fulfilled') {
         onFulfiled(that.value);
     }
-    if(that.status === 'rejected'){
+    if(that.status === 'rejected') {
         onRejected(that.reason);
     } 
+    if(that.status === 'pending') { // 这里有异步逻辑，没有调用成功或者失败
+        that.onResolvedCallbacks.push( function() {
+            onFulfiled(that.value)
+        });
+        that.onRejectedCallbacks.push( function(){
+            onRejected(that.reason);
+        })
+    }
 }
 
 module.exports = Promise;
-
-
-
-
-// let promise = new Promise(function(resolve, reject){
-//     console.log(1);
-//     reject('有钱了！');
-//     resolve();
-// });
-
-// promise.then(function(value) {   // onFulfilled
-//     console.log('success', value);
-// }, function(reason) { // onRejected
-//     console.log('reason', reason);
-// });
-// console.log(2);

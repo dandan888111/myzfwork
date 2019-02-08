@@ -11,15 +11,21 @@ let path = require('path');
 
 // promise 可以解决  回调地狱的问题 错误处理的问题 并发的问题
 
-let Promise = require('./1.promise');
+let Promise = require('./2.promise');
+// 1个promise实例，可以then多次
 let promise = new Promise(function(resolve, reject){
-    console.log(1);
-    reject('有钱了！');
+    setTimeout(()=>{
+        reject(100);
+    },1000)
 });
 
-promise.then(function(value) {   // onFulfilled
+promise.then(function(value) {   // pengding
     console.log('success', value);
 }, function(reason) { // onRejected
     console.log('reason', reason);
 });
-console.log(2);
+promise.then(function(value) {   // pengding
+    console.log('success', value);
+}, function(reason) { // onRejected
+    console.log('reason', reason);
+});
