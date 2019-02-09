@@ -1,28 +1,3 @@
-wifi: zhufengpeixun 
-      12345678
 
-## ÉÏ¿ÎÊ±¼ä
-- ÖÜÄÚ ÖÜÒ»ÖÜÈıÍíÉÏ8-10 
-- ÖÜÄ© ÖÜÈÕÈ«Ìì 9.30 - 1:00  3:00 - 6:00
-
-## ¿ÎÇ°×¼±¸ 
-- ÏÂÔØvscode  https://code.visualstudio.com/  
-- ÏÂÔØgit     https://git-scm.com/downloads
-- ÏÂÔØnode    https://nodejs.org/en/
-
-# ½ñÈÕ½²¿Î´ó¸Ù  »Øµ÷ ¡ª> promise -> generator -> async+await
-## 1.¸ß½×º¯Êı
-## 2.aop  Aspect Oriented Programming  ×°ÊÎÆ÷@
-## 3.lodash afterº¯Êı
-## 4.·¢²¼¶©ÔÄ
-## 5.¹Û²ìÕßÄ£Ê½
-## 6.promiseÓ¦ÓÃ
-## 7.ÊÖĞ´promise a£« ¹æ·¶
-	- p.catch
-	- p.finally
-	- Promise.resolve,Promise.reject
-	- Promise.deferred
-	- Promise.all,Promise.race
-## 8.generator + co
-## 9.async £« await 
-## 10.×îÖÕ°¸Àı
+8~12æ–‡ä»¶ï¼Œç¬¬ä¹æœŸæ— è§†é¢‘ï¼Œéœ€è¦ä¼šçœ‹ç¬¬å…«æœŸçš„ES6
+æœ‰æ—¶é—´å°±å›å¬ä¸€ä¸‹è¿™äº›å†…å®¹å§ï¼ï¼å“ã€ã€

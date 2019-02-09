@@ -1,28 +1,40 @@
-wifi: zhufengpeixun 
-      12345678
+1ï¼‰reduceåŸç†
+2ï¼‰ç±»
+3ï¼‰symbol
+4ï¼‰æ¨¡æ¿å­—ç¬¦ä¸²
+5ï¼‰æµè§ˆå™¨äº‹ä»¶ç¯
+6ï¼‰nodeåŸºç¡€
+7ï¼‰nodeäº‹ä»¶ç¯
+8ï¼‰nodeæ¨¡å— æ ¸å¿ƒæ¨¡å—
+9ï¼‰å®ç°commonjsè§„èŒƒ
+10ï¼‰npmçš„ä½¿ç”¨ å…¨å±€å®‰è£…æœ¬åœ°å®‰è£… åŒ…å­çš„å‘å¸ƒ
 
-## ÉÏ¿ÎÊ±¼ä
-- ÖÜÄÚ ÖÜÒ»ÖÜÈıÍíÉÏ8-10 
-- ÖÜÄ© ÖÜÈÕÈ«Ìì 9.30 - 1:00  3:00 - 6:00
+## promise + ganerator + async+await
+- es6 ç›¸å…³
+- let & const
+- è§£æ„èµ‹å€¼ {...} æµ…æ‹·è´  Object.assign æ·±æ‹·è´ WeakMap
+- set map -> WeakMap WeakSet  äº¤ å¹¶ å·®  for(let xxx of obj){} symbol.iterator
+- Object.keys Object.values Object.entries  es5çš„
+- Object.defineProperty vue(2.0) Proxy + reflect
+- ç®­å¤´å‡½æ•° æ²¡æœ‰this å’Œ arguments ç®­å¤´å‡½æ•°ä¸­æ²¡æœ‰thisä»è€Œè§£å†³äº†thisé—®é¢˜
+- reduce reduceRight,map,forEach compose  es5 find findIndex
+- includes es7
+- some,every,filter....
 
-## ¿ÎÇ°×¼±¸ 
-- ÏÂÔØvscode  https://code.visualstudio.com/  
-- ÏÂÔØgit     https://git-scm.com/downloads
-- ÏÂÔØnode    https://nodejs.org/en/
 
-# ½ñÈÕ½²¿Î´ó¸Ù  »Øµ÷ ¡ª> promise -> generator -> async+await
-## 1.¸ß½×º¯Êı
-## 2.aop  Aspect Oriented Programming  ×°ÊÎÆ÷@
-## 3.lodash afterº¯Êı
-## 4.·¢²¼¶©ÔÄ
-## 5.¹Û²ìÕßÄ£Ê½
-## 6.promiseÓ¦ÓÃ
-## 7.ÊÖĞ´promise a£« ¹æ·¶
-	- p.catch
-	- p.finally
-	- Promise.resolve,Promise.reject
-	- Promise.deferred
-	- Promise.all,Promise.race
-## 8.generator + co
-## 9.async £« await 
-## 10.×îÖÕ°¸Àı
+## è§£æbabel
+```
+npm install @babel/cli å‘½ä»¤è¡Œå·¥å…· @babel/core babelçš„æ ¸å¿ƒåŒ…ä¼šé…ç½®è½¬åŒ–çš„è§„åˆ™ @babel/preset-env å¯ä»¥æŠŠes6 è½¬åŒ–æˆes5
+```
+
+```
+æŠŠ 3.es6-class test.jså¹¶ä¸”ç¼–è¯‘å‡ºæ¥
+npx babel 3.es6-class.js -o test.js 
+```
+
+
+
+## è§£æç±»å±æ€§
+```
+@babel/plugin-proposal-class-properties
+```
