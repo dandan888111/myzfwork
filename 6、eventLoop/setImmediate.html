@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        
+        // 只有IE下才有呢！
+        // 这是宏任务
+        setImmediate(function(){
+            console.log('呵呵')
+        });    
+        setTimeout(function(){
+            console.log('哈哈哈')
+        }, 0);
+
+        // 执行结果：
+        // 哈哈哈
+        // 呵呵
+    </script>
+</body>
+</html>

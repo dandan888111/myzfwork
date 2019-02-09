@@ -1,0 +1,17 @@
+{
+  "name": "wdd-pack",
+  "version": "1.0.5",
+  "main": "index.js",
+  "bin": {
+    "wdd-pack": "./bin/www.js"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {},
+  "dependencies": {},
+  "description": ""
+}

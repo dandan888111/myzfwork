@@ -1,0 +1,1 @@
+console.log('a文件夹里面的index.js')

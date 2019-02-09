@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <div id="box"></div>
+</body>
+<script>
+    let box = document.getElementById('box');
+    let observer = new MutationObserver(function(){
+        console.log('当前盒子已经更新完毕了');
+        console.log(box.children.length);
+    })
+    observer.observe(box, {childList: true})
+    for(let i = 0 ; i < 100; i++){
+        box.appendChild(document.createElement('p'))
+    }
+    // 100行之后
+    for(let i = 0 ; i < 100; i++){
+        box.appendChild(document.createElement('p'))
+    }
+
+    setTimeout( ()=>{
+        console.log('xxx')
+    },0)
+
+
+</script>
+</html>

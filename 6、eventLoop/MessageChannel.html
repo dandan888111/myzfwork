@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <div id="box"></div>
+</body>
+<script>
+    let channel = new MessageChannel();
+    let port1 = channel.port1;
+    let port2 = channel.port2;
+
+    setTimeout(() => {
+        console.log('hello timer')
+    }, 0);
+
+    port2.postMessage('hello');    // 先发消息
+
+    port1.onmessage = function(e) {  // 监控
+        console.log(e.data)
+    };
+
+    // 执行结果
+    // hello
+    // hello timer
+
+
+</script>
+</html>
