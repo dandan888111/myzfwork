@@ -35,7 +35,7 @@ let program = process.argv.slice(2).reduce( (memo,current,index,arr)=>{
 
 console.log(process.env.NODE_ENV);
 
-// env 环境变量 此处有问题！！！！设置环境变量之后，不生效！
+// env 环境变量 
 let url = '';   // 可以自己定义环境变量。只有在当前窗口下生效, 会挂载在process.env对象上 => webpackDefinePlugin
 if(process.env.NODE_ENV === 'development'){
     url = 'localhost'
@@ -44,6 +44,10 @@ if(process.env.NODE_ENV === 'development'){
 }
 console.log(process.env.NODE_ENV);
 console.log(url);
+// 使用命令：export NODE_ENV=development 设置环境变量！这样就OK了！
+// 使用命令：node 1.global.js 查看代码效果！在code runner里是不会有效果的！要到命令行里运行！
+
+
 
 // cwd current working directory 当前工作目录
 console.log(process.cwd());     // http-server 在哪执行命令就以哪个文件夹下打开目录
@@ -65,9 +69,6 @@ process.nextTick( () => {
     console.log('n')
 })
 // 先n 后p
-
-
-
 
 
 
