@@ -1,5 +1,6 @@
 // 默认webpack配置文件的名字 叫webpack.config.js
 // 他的配置用的是node来写的，配置需要导出一个配置对象
+// npx webpack --config webpack.dandan.config.js 不用默认名字的时候，就用这个命令执行自己写的配置文件
 
 let path = require('path');
 // 使用插件，需要先引入

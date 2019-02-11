@@ -13,7 +13,7 @@ module.exports = {
     output: {
         // 出口的路径必须是一个绝对路径
         filename: 'bundle.js',  
-        // 打包后的目录
+        // 打包后的目录，路径必须是一个绝对路径
         path: path.resolve(__dirname, 'dist'),
         
     },
