@@ -93,7 +93,7 @@
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-eval("// 引用图片的方式\n// js 动态创建js图片\n// background: url(img);\n// <img src=\"\" />\n__webpack_require__(/*! ./index.less */ \"./src/index.less\"); // let img = new Image();\n// img.src = \"./logo.png\";\n// 图片不能写字符串，不能这样引入呢！要先require进去哦\n\n\nvar logo = __webpack_require__(/*! ./logo.png */ \"./src/logo.png\"); // file-loader 可以加载这个图片，把这个图片拷贝一份\n// 这个名字会用hash算法 算出一个名字：133254.png\n\n\nvar img = new Image();\nimg.src = logo;\ndocument.body.appendChild(img);\n\n//# sourceURL=webpack:///./src/index.js?");
+eval("// 引用图片的方式\n// js 动态创建js图片\n// background: url(img);\n// <img src=\"\" />\n__webpack_require__(/*! ./index.less */ \"./src/index.less\"); // let img = new Image();\n// img.src = \"./logo.png\";\n// 图片不能写字符串，不能这样引入呢！要先require进去哦\n\n\nvar logo = __webpack_require__(/*! ./logo.png */ \"./src/logo.png\"); // file-loader 可以加载这个图片，把这个图片拷贝一份\n// 这个名字会用hash算法 算出一个名字：133254.png\n\n\nvar fn = function fn() {\n  console.log('log');\n};\n\nfn();\nvar img = new Image();\nimg.src = logo;\ndocument.body.appendChild(img);\n\n//# sourceURL=webpack:///./src/index.js?");
 
 /***/ }),
 

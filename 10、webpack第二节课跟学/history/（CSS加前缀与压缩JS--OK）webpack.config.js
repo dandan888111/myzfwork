@@ -5,7 +5,7 @@ let MiniCssExtractPlugin = require('mini-css-extract-plugin');
 let OptimizeCssAssetsPlugin = require('optimize-css-assets-webpack-plugin');
 module.exports = {
     optimization: {
-        minimizer: [
+        minimizer: [    // 优化项
             new UglifyjswebpackPlugin({
                 cache: true,    // 缓存
                 parallel: true //并行打包
@@ -37,7 +37,7 @@ module.exports = {
                 use: 'postcss-loader',
                 enforce: 'pre'
             },
-            {   // 专门处理less的
+            {   // 专门处理less的，把less转成css
                 test: /\.less$/,
                 use: 'less-loader',
                 enforce: 'pre'

@@ -14,6 +14,10 @@ let logo = require('./logo.png');
 // file-loader 可以加载这个图片，把这个图片拷贝一份
 // 这个名字会用hash算法 算出一个名字：133254.png
 
+let  fn = () => {
+    console.log('log')
+};
+fn();
 
 let img = new Image();
 img.src = logo;

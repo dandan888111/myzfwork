@@ -19,6 +19,8 @@ module.exports = {
         // 1、loader简单，功能单一，可以组合，每一个都独立处理
         rules: [    //loader分为4类  preLoader normalLoader postLoader
             {   // eslint-loader会调用eslint
+                // yarn add eslint eslint-loader 安装这2个包
+                // 去eslint官网先勾选需要的规则，之后把规则文件下载下来、保存到根目录
                 test: /\.js$/,
                 use: 'eslint-loader',
                 enforce: 'pre'
