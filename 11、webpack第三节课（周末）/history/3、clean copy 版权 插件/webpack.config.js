@@ -2,8 +2,8 @@ let { resolve } = require('path');
 let MiniCssExtractPlugin = require('mini-css-extract-plugin');
 let HtmlWebpackPlugin = require('html-webpack-plugin');
 let webpack = require('webpack');
-let cleanWebpackPlugin = require('clean-webpack-plugin');
-let copyWebpackPlugin = require('copy-webpack-plugin');
+let cleanWebpackPlugin = require('clean-webpack-plugin');   // 在打包之前把dist目录删掉
+let copyWebpackPlugin = require('copy-webpack-plugin');     // 拷贝插件 把**拷贝到**目录下
 module.exports = {
     mode: 'production',
     // webpack 插件 html-webpack-plugin
