@@ -1,21 +1,17 @@
 
-// 异步的钩子（串行） 并行，需要等待所有并发的异步时间执行后再执行回调方法
-// 同时发送多个请求
-// 注册方法分为 tap注册 tapAsync
 
+// 异步串行的钩子
 
-
-let {AsyncParallelHook} = require('tapable');   // 异步并发执行
+let {AsyncSeriesHook} = require('tapable');
 
 class Lesson {
     constructor() {
         this.index = 0;
         this.hooks = {
-            arch: new AsyncParallelHook(['name']),
-
+            arch: new AsyncSeriesHook(['name']),
         }
     }
-    tap() { // 注册监听函数
+    tap() { // 第一个执行完，再执行第二个，第二个执行完就打印出end
         this.hooks.arch.tapAsync('node', (name, cb) => {
             setTimeout(() => {
                 console.log('node', name)
@@ -30,7 +26,7 @@ class Lesson {
         })
     }
     start() {
-        this.hooks.arch.callAsync('wdd',  function () {
+        this.hooks.arch.callAsync('wdd', function () {
             console.log('end');
         });
     }

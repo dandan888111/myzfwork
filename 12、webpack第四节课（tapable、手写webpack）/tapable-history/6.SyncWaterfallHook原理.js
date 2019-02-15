@@ -11,7 +11,6 @@ class SyncWaterfallHook {    // 钩子是同步的
         others.reduce( (a,b) => {
             return b(a)
         },ret)
-
     }
 }
 

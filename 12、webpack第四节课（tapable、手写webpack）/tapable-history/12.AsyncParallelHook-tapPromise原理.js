@@ -1,6 +1,6 @@
 
 
-class AsyncParallelBailHook {    
+class AsyncParallelHook {    
     constructor (args){    
         this.tasks = [];
     }
@@ -8,12 +8,12 @@ class AsyncParallelBailHook {
         this.tasks.push(task);
     }
     promise(...args){
-        let tasks = this.tasks.forEach( task => task(...args));
+        let tasks = this.tasks.map( task => task(...args));
         return Promise.all(tasks);
     }
 }
 
-let hook = new AsyncParallelBailHook(['name']);
+let hook = new AsyncParallelHook(['name']);
 let total = 0;
 hook.tapPromise('react', function(name){
     return new Promise( (resolve, reject) => {
@@ -32,7 +32,7 @@ hook.tapPromise('node', function(name){
     })
 })
 
-hook.promise('wdd', function () {
+hook.promise('wdd').then(function () {
     console.log('end')
 });
 
