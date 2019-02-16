@@ -1,0 +1,14 @@
+{
+  "name": "webpack-dev",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "devDependencies": {
+    "less": "^3.9.0",
+    "webpack": "^4.29.4",
+    "webpack-cli": "^3.2.3"
+  },
+  "dependencies": {
+    "tapable": "^1.1.1"
+  }
+}

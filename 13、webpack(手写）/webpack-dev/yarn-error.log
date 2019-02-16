@@ -1,0 +1,32 @@
+Arguments: 
+  D:\Program Files\nodejs\node.exe C:\Users\ASROCK\AppData\Roaming\npm\node_modules\yarn\bin\yarn.js init
+
+PATH: 
+  C:\Users\ASROCK\bin;D:\Program Files\Git\mingw64\bin;D:\Program Files\Git\usr\local\bin;D:\Program Files\Git\usr\bin;D:\Program Files\Git\usr\bin;D:\Program Files\Git\mingw64\bin;D:\Program Files\Git\usr\bin;C:\Users\ASROCK\bin;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0;C:\Program Files (x86)\Microsoft SQL Server\100\Tools\Binn;C:\Program Files\Microsoft SQL Server\100\Tools\Binn;C:\Program Files\Microsoft SQL Server\100\DTS\Binn;D:\Program Files\Git\cmd;C:\Program Files (x86)\Microsoft SQL Server\100\DTS\Binn;C:\Program Files (x86)\Microsoft SQL Server\100\Tools\Binn\VSShell\Common7\IDE;C:\Program Files (x86)\Microsoft Visual Studio 9.0\Common7\IDE\PrivateAssemblies;D:\Program Files\nodejs;C:\WINDOWS\System32\OpenSSH;D:\Program Files\Java\jdk-10.0.2\bin;C:\Users\ASROCK\AppData\Local\Microsoft\WindowsApps;C:\Users\ASROCK\AppData\Roaming\npm;C:\Users\ASROCK\AppData\Local\Programs\Microsoft VS Code\bin;D:\Program Files\Git\usr\bin\vendor_perl;D:\Program Files\Git\usr\bin\core_perl
+
+Yarn version: 
+  1.13.0
+
+Node version: 
+  9.5.0
+
+Platform: 
+  win32 x64
+
+Trace: 
+  Error: Can't answer a question unless a user TTY
+      at ConsoleReporter.question (C:\Users\ASROCK\AppData\Roaming\npm\node_modules\yarn\lib\cli.js:96071:59)
+      at Object.<anonymous> (C:\Users\ASROCK\AppData\Roaming\npm\node_modules\yarn\lib\cli.js:88459:38)
+      at Generator.next (<anonymous>)
+      at step (C:\Users\ASROCK\AppData\Roaming\npm\node_modules\yarn\lib\cli.js:304:30)
+      at C:\Users\ASROCK\AppData\Roaming\npm\node_modules\yarn\lib\cli.js:315:13
+      at <anonymous>
+
+npm manifest: 
+  No manifest
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile
